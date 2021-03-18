@@ -9,5 +9,36 @@ seletores:
 
     por TAG: informa qual tag quer ser estilizada
     por CLASSE: quando eu quero alterar várias tags ao mesmo tempo com o mesmo estilo
-    por ID: quando cada tag precisa ser única, não pode repetir*/
+    por ID: quando cada tag precisa ser única, não pode repetir
+    Seletor por tag
+
+tag { estilo; }
+
+seletor por class
+
+.class { estilo }
+
+seletor por id
+
+#id { estilo; }
+style > id > class > tag
+*/
     
+
+body{
+    background-color:#000000;
+}
+.corazul{
+    font-size:30px;
+    color:#01DFD7;
+    font-weight: bold;
+}
+#titulo{
+    font-size:40px;
+    color:#01DFD7;
+    font-weight: bold;
+}
+
+ol > li, ul > li, p{
+    color:#FFFFFF; 
+}
