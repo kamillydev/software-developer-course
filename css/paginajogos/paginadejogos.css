@@ -1,0 +1,13 @@
+/*
+Sintaxe
+
+    NOME DO SELETOR {
+        ESTILO
+    }
+
+seletores: 
+
+    por TAG: informa qual tag quer ser estilizada
+    por CLASSE: quando eu quero alterar várias tags ao mesmo tempo com o mesmo estilo
+    por ID: quando cada tag precisa ser única, não pode repetir*/
+    
