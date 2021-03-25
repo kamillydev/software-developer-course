@@ -1,0 +1,29 @@
+#titulo{
+    font-family: Arial, bolder;
+    font-size: 25px;
+    font-weight: 750;
+    text-align: center;
+    text-transform: uppercase;
+}
+body{
+    background-image:url(./imagens/Pikachu.png);
+    background-size: cover;
+    font-family: "Raleway";
+}
+span{
+    font-family: Arial, bolder;
+}
+table{
+    border-collapse: collapse;
+    margin-left: 20%;
+    background-color: azure;
+}
+.fonte{
+    text-align: center;
+    font-family:sans-serif;
+    width: 25%;
+}
+
+img{
+    width: 60%;
+}
