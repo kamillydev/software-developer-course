@@ -13,5 +13,9 @@ img{
 }
 img:hover{
     filter: brightness(50%);
+}
+button:hover{
+    background-color: rgb(55,58,58);
+    color: #FFF;
     cursor: pointer;
 }
