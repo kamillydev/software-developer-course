@@ -4,7 +4,7 @@ p{
     font-weight: 800;
     margin-left: 1.5%;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 14px;
 }
 img{
     width: 35%;
@@ -14,8 +14,39 @@ img{
 img:hover{
     filter: brightness(50%);
 }
+
 button:hover{
     background-color: rgb(55,58,58);
     color: #FFF;
     cursor: pointer;
+}
+body{
+    background-image:url(./imagens/Background.png);
+    background-size: cover;
+}
+.opcoes {
+    display: flex;
+    margin-right: 30px;
+}
+
+.opcoesBotoes {
+    width: 100px;
+    float: right;
+}
+
+.opcoesBotoes:hover {
+    cursor: pointer;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+#kamilly{
+    font-family: "Raleway";
+    font-size: 23px;
+    font-weight: 800;
+    margin-left: 1.5%;
+    text-transform: uppercase;
+    letter-spacing: 14px;
 }
