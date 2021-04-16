@@ -12,7 +12,7 @@
         <p>Página de Eventos</p>
         <div class="opcoes">
             <img class="opcoesBotoes" onclick="mostrarcolorido()" id="opcaoA" src="./imagens/colorido.png">
-            <img class="opcoesBotoes" onclick="mostrarcinza()" id="opcaoB" src="./imagens/cinza.png">
+            <img class="opcoesBotoes selecionado" onclick="mostrarcinza()" id="opcaoB" src="./imagens/cinza.png">
         </div>
     </div>
     <div id="cinza">
@@ -59,11 +59,15 @@
 
 <script>
     function mostrarcinza() {
+        document.querySelector('#opcaoB').classList.add('selecionado');
+        document.querySelector('#opcaoA').classList.remove('selecionado');
         document.querySelector('#cinza').style.display = "block";
         document.querySelector('#colorido').style.display = "none";
     }
 
     function mostrarcolorido() {
+        document.querySelector('#opcaoA').classList.add('selecionado');
+        document.querySelector('#opcaoB').classList.remove('selecionado');
         document.querySelector('#colorido').style.display = "block";
         document.querySelector('#cinza').style.display = "none";
     }
