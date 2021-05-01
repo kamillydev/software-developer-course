@@ -52,9 +52,34 @@ button{
     font-size: 10px;
     margin: 2px;
     background-color: #008CBA;
-    margin-left: 45%;
-    margin-right: 45%;
 }
 button:hover{
     filter: brightness(67%);
+}
+.opcoes{
+    display: flex;
+    justify-content: space-around;
+}
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+.link:hover{
+    text-decoration: underline;
+    color:#008CBA ;
+}
+#herois{
+    display:none ;
+}
+#jogos{
+    display: none;
+}
+.animes{
+    background-color: #008CBA;
+}
+.herois{
+    background-color: #597883;
+}
+.jogos{
+    background-color: #782fa8;
 }

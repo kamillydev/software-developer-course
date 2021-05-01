@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="pagina">
     <a target="_blank" href=https://github.com/kamillydev><img id="pinoquio"
             src="./imagens/pinoquio pixelado-1.png (3).png"></a>
     <p id="titulo">Web Developer Girl</p>
@@ -18,9 +18,11 @@
     <div id="animes">
         <p>Animes Favoritos</p>
         <ul>
-            <a target="_blank" href=https://pt.wikipedia.org/wiki/Shingeki_no_Kyojin>
-                <li>Attack on Titan</li>
-            </a>
+            <li>
+                <a target="_blank" class="link" href="https://pt.wikipedia.org/wiki/Shingeki_no_Kyojin">
+                    Attack on Titan
+                </a>
+            </li>
             <a target="_blank" href=https://pt.wikipedia.org/wiki/Kimetsu_no_Yaiba>
                 <li>Demon Slayer</li>
             </a>
@@ -87,17 +89,26 @@
             document.querySelector('#animes').style.display = "block";
             document.querySelector('#jogos').style.display = "none";
             document.querySelector('#herois').style.display = "none";
+            document.querySelector('#pagina').classList.add('animes');
+            document.querySelector('#pagina').classList.remove('jogos');
+            document.querySelector('#pagina').classList.remove('herois');
         }
 
         function mostrarjogos() {
             document.querySelector('#jogos').style.display = "block";
             document.querySelector('#animes').style.display = "none";
             document.querySelector('#herois').style.display = "none";
+            document.querySelector('#pagina').classList.add('jogos');
+            document.querySelector('#pagina').classList.remove('animes');
+            document.querySelector('#pagina').classList.remove('herois');
         }
         function mostrarherois() {
             document.querySelector('#herois').style.display = "block";
             document.querySelector('#animes').style.display = "none";
             document.querySelector('#jogos').style.display = "none";
+            document.querySelector('#pagina').classList.add('herois');
+            document.querySelector('#pagina').classList.remove('jogos');
+            document.querySelector('#pagina').classList.remove('animes');
         }
     </script>
 
