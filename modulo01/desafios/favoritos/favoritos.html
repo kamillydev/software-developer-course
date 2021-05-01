@@ -1,0 +1,106 @@
+<Html>
+
+<head>
+    <title>Web Developer Girl</title>
+    <link rel="stylesheet" href="favoritos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a target="_blank" href=https://github.com/kamillydev><img id="pinoquio"
+            src="./imagens/pinoquio pixelado-1.png (3).png"></a>
+    <p id="titulo">Web Developer Girl</p>
+    <div class="opcoes">
+        <button class="opcoesBotoes" onclick="mostraranimes()">Mostrar Animes</button>
+        <button class="opcoesBotoes selecionado" onclick="mostrarjogos()">Mostrar Jogos</button>
+        <button class="opcoesBotoes selecionado" onclick="mostrarherois()">Mostrar Herois</button>
+    </div>
+    <div id="animes">
+        <p>Animes Favoritos</p>
+        <ul>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Shingeki_no_Kyojin>
+                <li>Attack on Titan</li>
+            </a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Kimetsu_no_Yaiba>
+                <li>Demon Slayer</li>
+            </a>
+
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Saiki_Kusuo_no_Psi-nan>
+                <li>Saiki Kusuo no Psi-nan</li>
+            </a>
+        </ul>
+        <div>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Shingeki_no_Kyojin><img class="favoritos"
+                    src="./imagens/attack on titan.png" alt=""></a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Kimetsu_no_Yaiba><img class="favoritos"
+                    src="./imagens/demonslayer.png" alt=""></a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Saiki_Kusuo_no_Psi-nan><img class="favoritos"
+                    src="./imagens/saikikusuo.png" alt=""></a>
+        </div>
+    </div>
+    <div id="jogos">
+        <p>Jogos Favoritos</p>
+        <ul>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Assassin%27s_Creed_IV:_Black_Flag>
+                <li>Assassin's Creed IV: Black Flag</li>
+            </a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Prototype_2>
+                <li>Prototype 2</li>
+            </a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Minecraft>
+                <li>Minecraft</li>
+            </a>
+        </ul>
+        <div>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Assassin%27s_Creed_IV:_Black_Flag><img
+                    class="favoritos" src="./imagens/Assasinscreed.png" alt=""></a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Prototype_2></a><img class="favoritos"
+                src="./imagens/prototype2.png" alt=""></a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Minecraft><img class="favoritos"
+                    src="./imagens/minecraft.png" alt=""></a>
+        </div>
+    </div>
+    <div id="herois">
+        <p>Herois Favoritos</p>
+        <ul>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Batman>
+                <li>Batman</li>
+            </a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Homem_de_Ferro>
+                <li>Iron Man</li>
+            </a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Flash_(DC_Comics)>
+                <li>Flash</li>
+            </a>
+        </ul>
+        <div>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Batman><img class="favoritos"
+                    src="./imagens/batman.png" alt=""></a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Homem_de_Ferro><img class="favoritos"
+                    src="./imagens/ironman.png" alt=""></a>
+            <a target="_blank" href=https://pt.wikipedia.org/wiki/Flash_(DC_Comics)><img class="favoritos"
+                    src="./imagens/Flash.png" alt=""></a>
+        </div>
+    </div>
+    <script>
+        function mostraranimes() {
+            document.querySelector('#animes').style.display = "block";
+            document.querySelector('#jogos').style.display = "none";
+            document.querySelector('#herois').style.display = "none";
+        }
+
+        function mostrarjogos() {
+            document.querySelector('#jogos').style.display = "block";
+            document.querySelector('#animes').style.display = "none";
+            document.querySelector('#herois').style.display = "none";
+        }
+        function mostrarherois() {
+            document.querySelector('#herois').style.display = "block";
+            document.querySelector('#animes').style.display = "none";
+            document.querySelector('#jogos').style.display = "none";
+        }
+    </script>
+
+</body>
+
+</Html>
