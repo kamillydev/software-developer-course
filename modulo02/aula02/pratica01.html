@@ -1,0 +1,39 @@
+<!-- 
+    Adicionar Bootstrap:
+    
+    Adicionar a classe container na primeira div principal
+
+    Deixar o h1 com texto branco, background escuro e texto alinhado ao centro
+
+    Adicionar a class alert (mesma cor da imagem) na div alerta
+
+    Deixar o primeiro botão verde
+
+    Deixar o segundo botão vermelho
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercício Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" id="principal">
+        <h1 class="text-center text-white bg-dark">Carteira Digital: Btc 0</h1>
+
+        <div class="alert alert-warning" id="alerta">
+            Sua carteira digital está vazia :(
+        </div>
+
+        <button class="btn btn-success">Adicionar Crédito</button>
+        <button class="btn btn-danger">Continuar sem crédito</button>
+    </div>
+</body>
+
+</html>
