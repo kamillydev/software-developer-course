@@ -1,0 +1,90 @@
+<!-- 
+
+    Dica: Se não souber bem qual cor/estilo usar, pode olhar o id da tag que dá uma dica de qual cor/estilo usar
+
+    1 - Adicionar Bootstrap;
+    
+    2 - Adicionar a classe container na div principal
+
+    3 - Estilizar os botões conforme imagem
+
+    4 - Criar os alerts conforme a imagem, alinhando o texto também conforme a imagem
+
+    5 - Estilizar os botões e adicionar as badges conforme imagem
+
+    6 - Alinhar o texto dos três parágrafos conforme imagem
+
+    7 - As últims divs (COLORS), colorir conforme o nome que tem no id de cada div
+        observacao: aplicar class nas div
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tema Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" id="principal">
+        <h1 class="text-white bg-primary text-center">Bootstrap Básico</h1>
+
+        <button class="btn btn-primary">Buttons</button>
+        <button class="btn btn-secondary">Buttons</button>
+        <button class="btn btn-success">Buttons</button>
+        <button class="btn btn-danger">Buttons</button>
+        <button class="btn btn-warning">Buttons</button>
+        <button class="btn btn-link">Buttons</button>
+
+        <div class="alert alert-success text-center" id="alertaSucesso">
+            Alerts
+        </div>
+        <div class="alert alert-warning" id="alertaAviso">
+            Alerts
+        </div>
+        <div class="alert alert-primary text-center" id="alertaInformacao">
+            Alerts
+        </div>
+        <div class="alert alert-danger text-right" id="alertaPerigo">
+            Alerts
+        </div>
+
+        <button class="btn btn-danger" id="badgeUm">
+            Badges <span class="badge badge-light">3</span>
+        </button>
+        <button class="btn btn-light" id="badgeDois">
+            Badges <span class="badge badge-primary">new</span>
+        </button>
+        <button class="btn btn-light" id="badgeTres">
+            Badges <span class="badge badge-pill badge-success">7</span>
+        </button>
+
+        <div>
+            <p class="text-right">Text-alignment (direita)</p>
+            <p class="text-center">Text-alignment (central)</p>
+            <p class="text-left">Text-alignment (esquerda)</p>
+        </div>
+
+        <div class="bg-warning text-center text-danger" id="amarela">
+            <strong>COLORS</strong>
+        </div>
+        <div class="bg-danger text-center text-light" id="vermelha">
+            <strong>COLORS</strong>
+        </div>
+        <div class="bg-success text-center text-light" id="verde">
+            <strong>COLORS</strong>
+        </div>
+        <div class="bg-primary text-center text-warning" id="azul">
+            <strong>COLORS</strong>
+        </div>
+        <div class="bg-secondary text-center text-dark" id="segundaCor">
+            <strong>COLORS</strong>
+        </div>
+    </div>
+</body>
+
+</html>
