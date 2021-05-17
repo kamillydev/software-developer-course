@@ -1,0 +1,56 @@
+<!-- 
+    1. Adicionar bootstrap
+
+    2. Adicionar a classe container na primeira div
+
+    3. Adicionar a classe row na div linha1 e na div linha2
+
+    4. Adicionar uma cor de fundo (background) diferente para cada uma das divs que ficam dentro das row
+
+    5. Adicionar a classe col conforme o texto em cada uma das outras divs, exemplo: 3 colunas == col-3
+
+    Ver imagem de exemplo
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Grid Exercise</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="pratica02.css">
+</head>
+
+<body class="bg-info">
+    <div class="container">
+        <div class="row" id="linha1">
+            <div class="col-12 text-center">
+                <h1 class="text-dark">Mundo dos Animes</h1>
+            </div>
+        </div>
+        <div class="row" id="imagens">
+            <img class="col-12 col-lg-6" src="./imagens/onepiece.png">
+            <img class="col-12 col-lg-6" src="./imagens/onepunchman.png">
+        </div>
+        <br>
+        <div class="row" id="banner">
+            <img class="col-12" src="./imagens/naruto_banner.png">
+        </div>
+        <br>
+        <h3 class="text-dark">Onde assistir:</h3>
+        <div class="row" id="sites">
+            <img class="col-12 col-sm-4" src="./imagens/crunchyroll.png">
+            <img class="col-12 col-sm-4" src="./imagens/fumination.png">
+            <img class="col-12 col-sm-4" src="./imagens/MyAnimeList.png">
+        </div>
+        <br>
+        <div class="text-dark text-center">
+            <span>Código fonte pode ser encontrado aqui: <a class="text-dark"
+                    href="https://github.com/kamillydev">Github</a></span>
+        </div>
+    </div>
+</body>
+
+</html>

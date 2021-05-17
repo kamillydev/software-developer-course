@@ -1,0 +1,39 @@
+<!-- 
+    1. Adicionar bootstrap
+
+    2. Adicionar a classe container na primeira div
+
+    3. Adicionar a classe row na div linha1 e na div linha2
+
+    4. Adicionar uma cor de fundo (background) diferente para cada uma das divs que ficam dentro das row
+
+    5. Adicionar a classe col conforme o texto em cada uma das outras divs, exemplo: 3 colunas == col-3
+
+    Ver imagem de exemplo
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Grid Exercise</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="linha1">
+            <div class="bg-info col-3">3 colunas</div>
+            <div class="bg-secondary col-9">9 colunas</div>
+        </div>
+        <div class="row" id="linha2">
+            <div class="bg-danger col-2">2 colunas</div>
+            <div class="bg-success col-8">8 colunas</div>
+            <div class="bg-warning col-2">2 colunas</div>
+        </div>
+    </div>
+</body>
+
+</html>
