@@ -1,0 +1,28 @@
+body {
+    background-color: #bdd1e2;
+    font-family: "Nunito";
+}
+h1{
+    font-size: 4rem;
+}
+@media (max-width: 500px)
+{
+    h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 700px)
+{
+    h1{
+        font-size:5rem
+    }
+    body{
+        background-color: rgb(224, 88, 167);
+    }
+}
+@media (max-height:600px)
+{
+    body{
+        background-color: rgb(39, 129, 151);
+    }
+}
