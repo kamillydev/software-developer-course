@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="museudoce.css">
+
+    <title>Museu do Doce</title>
+</head>
+
+<body>
+    <!-- Repara que no vídeo as imagens ficam bem no canto do navegador, sem espaços 
+        Para fazer isso a gente diminui o padding da div com as classes container
+        Para diminuir o padding (espaço entre a div e o que tem dentro) a gente usa
+        o css -> padding: 0px;
+        Como a gente quer remover os espaços da direita e da esquerda, então ficaria algo como:
+        padding-right: 0px;
+        padding-left: 0px;
+
+        Mas como estamos usando bootstrap, vamos usar classes para isso, que são:
+        pr-0 que é para padding-right: 0px;
+        e
+        pl-0 que é para padding-left: 0px;
+
+        Tenta adicionar então estas duas classes nas divs que possuem a classe container para ver a diferença
+    -->
+    <div class="container-fluid pl-0 pr-0">
+        <div class="row align-items-center ">
+            <div class="col-6 text-white text-center d-none d-lg-block" id="titulo">
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+                <h1>MUSEU<span>/</span>DO<span>/</span>DOCE</h1>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="./imagens/hand2.png">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pl-0 pr-0">
+        <div class="row align-items-center content">
+            <!-- no video exemplo quando o navegador está grande a imagem fica do lado do texto
+                mas quando diminui a imagem fica embaixo e o texto em cima, como isso acontece?
+                Acontece porque é usado a clase order
+                A classe order diz qual coisa vem antes da outra, tem um número de 1 até 12, sendo 
+                que o número 1 é o primeiro e o 12 é o segundo, assim, order-1 vem antes de order-2, por exemplo.
+            
+                Então quando o navegador está grande, o normal é a imagem antes do texto, mas quando o navegador
+                diminui, o texto é que vem depois, então precisamos mudar a ordem, mas apenas quando o navegador diminuir
+            
+                assim:
+                    na imagem: order-2 order-md-1
+                    que significa, a imagem vem primeiro quando o navegador é tamanho medio para cima (order-md-1)
+                    depois, a imagem vai vir em segundo (order-2)
+
+                fazer isso para todas as divs com imagem e texto, para tentar deixar igual no video
+                -->
+            <div class="col-md-6 order-2 order-md-1">
+                <!-- pode adicionar as classes de order nesta div -->
+                <img class="img-fluid" src="imagens/milk.png">
+            </div>
+            <!-- para funcionar direito, todas as divs vão precisar da classe order, então a div do texto também precisa -->
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <!-- tenta adicionar aqui a classe order, só que o contrário da div da imagem -->
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 ">
+                        <h2>MUSEU DO DOCE</h2>
+                        <!-- quando o navegador está no tamanho grande (lg) ou maior o ícone pirulito aparece 
+                            mas quando o navegador fica menor, o ícone pirulito some
+                        
+                            para sumir, usamos css -> display: none, lembra?
+                            Mas como estamos usando bootstrap, vamos usar a classe d-none
+                            Tenta adicionar ela na tag imagem do ícone pirulito.
+
+                            Agora, a imagem sumiu, como faz para mostrar ela quando o navegador estiver grande (lg) ou maior ?
+                            Simples, precisamos usar um display que mostre a imagem só no tamanho lg em diante
+                            Um dos displays que mostra coisas é o css -> display: block
+                            Maaaas, estamos usando bootstrap, então vamos usar a classe d-block (somente tamanho grande), então na realidade é d-lg-block
+                            Tenta adicionar essa classe na tag imagem do ícone pirulito
+
+                            Ficou certo?
+                            Provavelmente não, mas tenta para ver se fica.
+                            Se não ficar, vamos ter que testar outros displays até ficar correto.
+                            Tenta ver qual destes ficará correto:
+                                d-flex
+                                d-inline
+
+                            Lembra que vamos mostrar o ícone só em tamanhos grandes ou maiores, então coloca um lg depois do d-
+
+                        fazer isso para todos os ícones de pirulito da página
+                        -->
+                        <img class="d-none d-lg-inline" src="imagens/lolli_icon.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <div class="col-md-6 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8">
+                        <h2>MUSEU DO DOCE</h2>
+                        <img class="d-none d-lg-inline" src="imagens/lolli_icon.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="imagens/gumball.png">
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img class="img-fluid" src="imagens/sprinkles.png">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8">
+                        <h2>MUSEU DO DOCE</h2>
+                        <img class="d-none d-lg-inline" src="imagens/lolli_icon.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

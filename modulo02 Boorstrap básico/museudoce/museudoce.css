@@ -24,7 +24,8 @@ p{
 span {
     color: #EA1C2C;
 }
-h1 {
-    font-weight: 100;
-    font-size: 4rem;
+@media () {
+    h1 {
+        font-size: 4rem;
+    }
 }
