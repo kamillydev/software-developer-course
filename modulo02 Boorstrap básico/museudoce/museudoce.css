@@ -24,8 +24,16 @@ p{
 span {
     color: #EA1C2C;
 }
-@media () {
+h1 {
+    font-size: 4rem;
+}
+@media (max-width: 1250px) {
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 1150px){
+    h1{
+        font-size: 3rem;
     }
 }
