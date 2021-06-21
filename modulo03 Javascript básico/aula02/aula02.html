@@ -1,0 +1,49 @@
+<html>
+
+<head></head>
+
+<body>
+    <h1>Java Script</h1>
+    <label>Digite o primeiro numero</label><input id="Primeiro" type="text">
+    <label>Digite o segundo numero</label><input id="Segundo" type="text">
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <script>
+        function somar() {
+            //informar primeiro numero
+            //informar segundo numero
+            //transformar em inteiro 
+            //somar os dois numeros 
+            //mostrar resultado
+            //parseInt() converte texto para inteiro
+            //var primeiroNumero = prompt("informe o primeiro numero");
+            var primeiroNumero = document.getElementById("Primeiro").value;
+            var segundoNumero = document.getElementById("Segundo").value;
+            var resultado = parseInt(primeiroNumero) + parseInt(segundoNumero);
+            alert(resultado);
+        }
+        function subtrair() {
+            var primeiroNumero = document.getElementById("Primeiro").value;
+            var segundoNumero = document.getElementById("Segundo").value;
+            var resultado = parseInt(primeiroNumero) - parseInt(segundoNumero);
+            alert(resultado);
+        }
+        function dividir() {
+            var primeiroNumero = document.getElementById("Primeiro").value;
+            var segundoNumero = document.getElementById("Segundo").value;
+            var resultado = parseFloat(primeiroNumero) / parseFloat(segundoNumero);
+            alert(resultado);
+        }
+        function multiplicar() {
+            var primeiroNumero = document.getElementById("Primeiro").value;
+            var segundoNumero = document.getElementById("Segundo").value;
+            var resultado = parseFloat(primeiroNumero) * parseFloat(segundoNumero);
+            alert(resultado);
+        }
+
+    </script>
+</body>
+
+</html>
