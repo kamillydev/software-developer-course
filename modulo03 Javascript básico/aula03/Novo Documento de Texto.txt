@@ -1,0 +1,3 @@
+Escopo de variável
+é aquilo que determina onde uma variavel pode ser usada para 
+ser um identificador em um programa
