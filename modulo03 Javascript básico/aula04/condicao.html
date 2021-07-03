@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <style>
+        .div-calculadora {
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 15px;
+        }
+
+        .tecla {
+            user-select: none;
+            width: 30px;
+            border: 3px solid rgb(255, 196, 0);
+            text-align: center;
+            background-color: rgb(240, 184, 0);
+        }
+
+        .tecla-igual {
+            width: 110px;
+        }
+
+        .resultado {
+            text-align: right;
+            border: 2px solid #969696;
+            width: 222px;
+            max-height: 42px;
+            min-height: 24px;
+        }
+
+        .linha {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste maioridade</h1>
+    <div class="div-calculadora resultado">
+        <span></span>
+    </div>
+    <div class="linha">
+        <div id="um" class="div-calculadora tecla" onclick="teclaUm()">
+            <span>1</span>
+        </div>
+        <div id="dois" class="div-calculadora tecla" onclick="teclaDois()">
+            <span>2</span>
+        </div>
+        <div id="tres" class="div-calculadora tecla" onclick="teclaTres()">
+            <span>3</span>
+        </div>
+    </div>
+    <div class="linha">
+        <div id="quatro" class="div-calculadora tecla" onclick="teclaQuatro()">
+            <span>4</span>
+        </div>
+        <div id="cinco" class="div-calculadora tecla" onclick="teclaCinco()">
+            <span>5</span>
+        </div>
+        <div id="seis" class="div-calculadora tecla" onclick="teclaSeis()">
+            <span>6</span>
+        </div>
+    </div>
+    <div class="linha">
+        <div id="sete" class="div-calculadora tecla" onclick="teclaSete()">
+            <span>7</span>
+        </div>
+        <div id="oito" class="div-calculadora tecla" onclick="teclaOito()">
+            <span>8</span>
+        </div>
+        <div id="nove" class="div-calculadora tecla" onclick="teclaNove()">
+            <span>9</span>
+        </div>
+    </div>
+    <div class="linha">
+        <div id="zero" class="div-calculadora tecla" onclick="teclaZero()">
+            <span>0</span>
+        </div>
+        <div id="resultado" class="div-calculadora tecla" onclick="teclaResultado()">
+            <span>=</span>
+        </div>
+    </div>
+
+
+    <script>
+        var Idade = "";
+        function teclaUm() {
+            Idade = Idade + "1";
+        }
+        function teclaDois() {
+            Idade = Idade + "2";
+        }
+        function teclaTres() {
+            Idade = Idade + "3";
+        }
+        function teclaQuatro() {
+            Idade = Idade + "4";
+        }
+        function teclaCinco() {
+            Idade = Idade + "5";
+        }
+        function teclaSeis() {
+            Idade = Idade + "6";
+        }
+        function teclaSete() {
+            Idade = Idade + "7";
+        }
+        function teclaOito() {
+            Idade = Idade + "8";
+        }
+        function teclaNove() {
+            Idade = Idade + "9";
+        }
+        function teclaZero() {
+            Idade = Idade + "0";
+        }
+        function teclaResultado() {
+            if (Idade > 17) {
+                console.log("maior de idade");
+            }
+            else {
+                console.log("menor de idade");
+            }
+            Idade = "";
+        }
+    </script>
+</body>
+
+</html>
