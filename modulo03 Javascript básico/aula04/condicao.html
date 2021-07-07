@@ -1,6 +1,9 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
     <style>
         .div-calculadora {
             margin-top: 30px;
@@ -9,11 +12,22 @@
         }
 
         .tecla {
+            font-family: 'Source Code Pro', monospace;
             user-select: none;
             width: 30px;
             border: 3px solid rgb(255, 196, 0);
             text-align: center;
             background-color: rgb(240, 184, 0);
+        }
+
+        h1 {
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        .tecla:hover {
+            background-color: rgb(55, 58, 58);
+            color: #FFF;
+            cursor: pointer;
         }
 
         .tecla-igual {
@@ -28,6 +42,8 @@
             min-height: 24px;
         }
 
+
+
         .linha {
             display: flex;
         }
@@ -36,8 +52,8 @@
 
 <body>
     <h1>Teste maioridade</h1>
-    <div class="div-calculadora resultado">
-        <span></span>
+    <div id="resultado" class="div-calculadora resultado">
+        <span id="valor"></span>
     </div>
     <div class="linha">
         <div id="um" class="div-calculadora tecla" onclick="teclaUm()">
@@ -76,7 +92,7 @@
         <div id="zero" class="div-calculadora tecla" onclick="teclaZero()">
             <span>0</span>
         </div>
-        <div id="resultado" class="div-calculadora tecla" onclick="teclaResultado()">
+        <div id="igual" class="div-calculadora tecla" onclick="teclaIgual()">
             <span>=</span>
         </div>
     </div>
@@ -85,42 +101,77 @@
     <script>
         var Idade = "";
         function teclaUm() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "1";
         }
         function teclaDois() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "2";
         }
         function teclaTres() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "3";
         }
         function teclaQuatro() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "4";
         }
         function teclaCinco() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "5";
         }
         function teclaSeis() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "6";
         }
         function teclaSete() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "7";
         }
         function teclaOito() {
+            if (Idade == "") {
+                document.getElementById("valor").innerText = "";
+                document.getElementById("resultado").style = "background-color : white";
+            }
             Idade = Idade + "8";
         }
         function teclaNove() {
+            if (Idade == "") {
+                //a div resultado tem que voltar pra cor incial 
+                //o texto do valor ele vai ter que receber vazio
+                document.getElementById("valor").innerText = "";
+                document.getElementById("resultado").style = "background-color : white";
+            }
             Idade = Idade + "9";
         }
         function teclaZero() {
+            if (Idade == "") {
+                document.getElementById("valor").innerText = "";
+                document.getElementById("resultado").style = "background-color : white";
+            }
             Idade = Idade + "0";
         }
-        function teclaResultado() {
+        function teclaIgual() {
+            if (Idade == "") {
+                return;
+            }
             if (Idade > 17) {
-                console.log("maior de idade");
+                document.getElementById("valor").innerText = "maior de idade";
+                document.getElementById("resultado").style = "background-color: green";
             }
             else {
-                console.log("menor de idade");
+                document.getElementById("valor").innerText = "menor de idade";
+                document.getElementById("resultado").style = "background-color: red";
             }
+
+
             Idade = "";
         }
     </script>
