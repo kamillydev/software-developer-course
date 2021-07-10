@@ -36,8 +36,8 @@
 
 <body>
     <h1>Calculadora</h1>
-    <div class="div-calculadora resultado">
-        <span></span>
+    <div id="resultado" class="div-calculadora resultado">
+        <span id="valor"></span>
     </div>
     <div class="linha">
         <div id="um" class="div-calculadora tecla" onclick="teclaUm()">
@@ -97,38 +97,46 @@
 
 
     <script>
-        var primeiroNumero = 0;
-        var segundoNumero = 0;
-        var sinal = "";
+        var Numero = "";
         function teclaUm() {
-            console.log(1);
+            Numero = Numero + 1;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaDois() {
-            console.log(2);
+            Numero = Numero + 2;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaTres() {
-            console.log(3);
+            Numero = Numero + 3;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaQuatro() {
-            console.log(4);
+            Numero = Numero + 4;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaCinco() {
-            console.log(5);
+            Numero = Numero + 5;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaSeis() {
-            console.log(6);
+            Numero = Numero + 6;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaSete() {
-            console.log(7);
+            Numero = Numero + 7;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaOito() {
-            console.log(8);
+            Numero = Numero + 8;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaNove() {
-            console.log(9);
+            Numero = Numero + 9;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaZero() {
-            console.log(0);
+            Numero = Numero + 0;
+            document.getElementById("valor").innerText = Numero;
         }
         function teclaSubtrair() {
             console.log("-");

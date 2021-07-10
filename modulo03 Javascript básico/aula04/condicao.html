@@ -95,6 +95,9 @@
         <div id="igual" class="div-calculadora tecla" onclick="teclaIgual()">
             <span>=</span>
         </div>
+        <div id="clear" class="div-calculadora tecla" onclick="teclaClear()">
+            <span>C</span>
+        </div>
     </div>
 
 
@@ -119,7 +122,7 @@
             document.getElementById("valor").innerText = Idade;
         }
         function teclaQuatro() {
-            document.getElementById("valor").innerText = "";
+            document.getElementById("valor").innerText = ""; ''
             document.getElementById("resultado").style = "background-color : white";
             Idade = Idade + "4";
             document.getElementById("valor").innerText = Idade;
@@ -180,6 +183,12 @@
                 document.getElementById("resultado").style = "background-color: red";
             }
 
+
+            Idade = "";
+        }
+        function teclaClear() {
+            document.getElementById("valor").innerText = "";
+            document.getElementById("resultado").style = "background-color : white";
 
             Idade = "";
         }
