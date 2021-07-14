@@ -5,24 +5,26 @@
     
     1a: Fazer download do app Netflix na Play Store
     2a: Fazer um sanduíche
-|========================================================|
-|Download:						|
-|	1- Pegar o celular				|
-|	2- Desbloquear					|
-|	3- Abrir a playstore				|
-|	4- Procurar na barra de pesquisa Netflix	|
-|	5- Instalar					|
-|Sanduíche:						|
-|	1- Abrir a geladeira				|
-|	2- Pegar o pão e colocar na mesa		|
-|	3- Pegar as misturas e colocar na mesa		|
-|	4- Fechar a geladeira				|
-|	5- Pegar uma faca				|
-|	5- Cortar o pão em dois				|
-|	6- Colocar a mistura no pão			|
-|	7- Fechar o pão					|
-|	8- Colocar o sanduiche em um prato   		|
 ========================================================|
+Download:						
+	1- Pegar o celular				
+	2- Desbloquear					
+	3- Abrir a playstore				
+	4- Procurar na barra de pesquisa Netflix	
+	5- Instalar					
+Sanduíche:						
+	1- Abrir a geladeira				
+	2- Pegar o pão
+	3- Colocar o pão na mesa		
+	4- Pegar as misturas	
+	5- Colocar misturas na mesa	
+	6- Fechar a geladeira				
+	7- Pegar uma faca				
+	8- Cortar o pão em dois				
+	9- Colocar a mistura no pão			
+	10- Fechar o pão					
+	11- Colocar o sanduiche em um prato   		
+========================================================
 ---------------------------------------------
 2. Resolva os seguintes exercícios de lógica:
 ---------------------------------------------
@@ -44,7 +46,7 @@
         x = primeiroNumero + segundoNumero;
         x = x + 5;
 
-    2c: Qual o valor de x? 28?
+    2c: Qual o valor de x? 3
 
         var x = 0;
         var primeiroNumero = 10;
@@ -86,24 +88,46 @@
         senão, x deve receber 'menor de idade':
 
         var idade = 14;
-        var x = "menor de idade";
+        var x = "";
+
+	if(idade < 18){
+		x = "menor de idade";
+	} else {
+		x = "maior de idade";
+	}
 
     3b: Descubra se o número informado é positivo ou negativo, se for positivo x deve receber 'positivo',
         senão, x deve receber 'negativo':
 
         var numero = 4;
-        var x = "positivo";
+        var x = "";
+	
+	if(numero < 0 ){
+		x = "positivo";
+	}else{
+		x= "negativo";
+	}
 
     3c: Descubra a média das notas do aluno, se for acima da média x deve receber 'aprovado', senão, x deve
         receber 'reprovado'. (A média é feito somando todas notas e dividindo pela quantidade de notas)
 
         var media = 7;
-        var x = "aprovado";
+        var x = "";
 
         var nota1 = 7;
         var nota2 = 5;
         var nota3 = 6;
         var nota4 = 8;
+	var notafinal = 0;
+
+	notafinal = nota1 + nota2 + nota3 + nota4;
+	notafinal = notafinal / 4;
+	
+	if(notafinal >= media){
+		x = "aprovado";
+	}else{
+		x = "reprovado";
+	}
     
 --------------------------------
 4. Defina os tipos de variáveis:
@@ -129,7 +153,7 @@
 			
     4j: var x = null; nulo
 							
-    4k: var x = undefined; nulo
+    4k: var x = undefined; undefined
 			
     4l: var x = "true"; string
 			
