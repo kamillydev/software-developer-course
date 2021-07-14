@@ -1,0 +1,102 @@
+-> Para resolver o desafio precisa de:
+
+---------
+-- logica
+---------
+
+    Sequencia de passos necessários para executar uma determinada tarefa.
+        IMPORTANTE: A sequencia tem uma ordem correta;
+        IMPORTANTE2: Geralmente existem mais de uma maneira de organizar uma sequencia correta;
+
+    ferver agua versao 1:
+
+        1. pegar chaleira
+        2. colocar agua dentro
+        3. ligar o fogo
+        4. colocar a chaleira no fogo
+
+    ferver agua versao 2:
+
+        1. pegar chaleira
+        2. colocar agua dentro
+        3. colocar a chaleira no fogão
+        4. ligar o fogo
+
+
+-----------
+-- if..else
+-----------
+    Algoritmo para ferver agua
+
+        1. pegar chaleira
+        2. SE (if) tem agua ENTÃO
+            3. colocar agua dentro
+            4. SE (if) tem gás ENTÃO
+                5. ligar o fogo
+                6. colocar a chaleira no fogo
+            7. SENÃO (else)
+                8. tirar agua da chaleira
+                9. guardar a chaleira
+        10. SENÃO (else)
+            11. guardar a chaleira
+
+
+
+------------------------------------------------------------------------------------
+-- tipos de variaveis (bool, string, integer, decimal, null, undefined)
+------------------------------------------------------------------------------------
+
+Variavel é um lugar em que guardamos um valor por determinado tempo.
+Esse valor pode ser mudado durante a execução do algoritmo.
+Ao encerrar o algoritmo/programa as variaveis perdem seu valor e voltam ao estado inicial.
+
+casos exemplos de uso de variaveis:
+    var tempo: 00:00
+    durante o jogo, a variavel tempo aumenta de segundo em segundo
+    quando chegar em 45 minutos, a primeira parte do jogo acaba e a variavel tempo volta a zero
+
+    var gols = 0;
+    durante o jogo, os times podem fazer gols, então os gols são incrementados em 1;
+    no final do jogo, gols volta a ser zero;
+
+
+Tipos: 
+------
+
+    Para numeros inteiros, temos a variavel do tipo: integer
+    Para numeros decimais, temos a variavel do tipo: decimal
+
+    Para textos, temos a variavel do tipo: string
+    
+    Para verdade/falso (verificação if..else), temos a variavel do tipo: bool (boolean) == true/false
+
+
+Estados de variáveis:
+---------------------
+
+    NULL:
+        Para variaveis que estão sendo criadas, a gente diz que estamos "instanciando as variáveis";
+        por exemplo:
+
+            var x = 0;  // instanciando a variavel x com zero
+
+            x == 0
+
+        Quando a gente instancia uma variavel sem atribuir um valor pra ela, essa variavel começa como NULL;
+        por exemplo:
+
+            var x;  // instanciando a variavel x com null
+                x == null (nulo)
+
+
+        > estado NULL é quando uma variavel existe mas não tem valor ainda;
+
+    UNDEFINED: //indefinido
+
+        > estado UNDEFINED é quando uma variavel não existe;
+
+        por exemplo:
+
+        var x = 10; // instanciando a variavel x com 10;
+
+        x = y + 3; // y não existe, y nunca foi instanciado, logo, y é indefinido ou seja UNDEFINED <-- isso gera um ERRO;

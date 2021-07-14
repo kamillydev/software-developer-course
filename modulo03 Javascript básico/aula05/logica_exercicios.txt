@@ -1,0 +1,142 @@
+------------------------------------------------------------------------------------------
+---------------------------------------
+1. Descreva os passos necessários para:
+---------------------------------------
+    
+    1a: Fazer download do app Netflix na Play Store
+    2a: Fazer um sanduíche
+|========================================================|
+|Download:						|
+|	1- Pegar o celular				|
+|	2- Desbloquear					|
+|	3- Abrir a playstore				|
+|	4- Procurar na barra de pesquisa Netflix	|
+|	5- Instalar					|
+|Sanduíche:						|
+|	1- Abrir a geladeira				|
+|	2- Pegar o pão e colocar na mesa		|
+|	3- Pegar as misturas e colocar na mesa		|
+|	4- Fechar a geladeira				|
+|	5- Pegar uma faca				|
+|	5- Cortar o pão em dois				|
+|	6- Colocar a mistura no pão			|
+|	7- Fechar o pão					|
+|	8- Colocar o sanduiche em um prato   		|
+========================================================|
+---------------------------------------------
+2. Resolva os seguintes exercícios de lógica:
+---------------------------------------------
+
+    2a: Qual o valor de x? 15
+
+        var x = 0;    
+        var primeiroNumero = 10;
+        var segundoNumero = 5;
+
+        x = primeiroNumero + segundoNumero;
+
+    2b: Qual o valor de x? 20
+
+        var x = 0;
+        var primeiroNumero = 10;
+        var segundoNumero = 5;
+
+        x = primeiroNumero + segundoNumero;
+        x = x + 5;
+
+    2c: Qual o valor de x? 28?
+
+        var x = 0;
+        var primeiroNumero = 10;
+        var segundoNumero = 5;
+
+        x = primeiroNumero * 2; 
+        x = x + segundoNumero;
+        x = 3;
+
+    2d: Qual o valor de x? 13
+
+        var x = 0;
+        var primeiroNumero = 10;
+        var segundoNumero = 5;
+
+        if (primeiroNumero > 6) {
+            x = primeiroNumero + 3;
+        } else {
+            x = segundoNumero;
+        }
+
+    2e: Qual o valor de x? 5 
+
+        var x = 0;
+        var primeiroNumero = 10;
+        var segundoNumero = 5;
+
+        if (segundoNumero < primeiroNumero) {
+            x = primeiroNumero - segundoNumero;
+        } else {
+            x = 0;
+        }
+
+-----------------------------------------------------------
+3: Crie um algoritmo para resolver os seguintes problemas:
+-----------------------------------------------------------
+
+    3a: Descubra se a pessoa é maior de idade, se for maior de idade então x deve receber 'maior de idade', 
+        senão, x deve receber 'menor de idade':
+
+        var idade = 14;
+        var x = "menor de idade";
+
+    3b: Descubra se o número informado é positivo ou negativo, se for positivo x deve receber 'positivo',
+        senão, x deve receber 'negativo':
+
+        var numero = 4;
+        var x = "positivo";
+
+    3c: Descubra a média das notas do aluno, se for acima da média x deve receber 'aprovado', senão, x deve
+        receber 'reprovado'. (A média é feito somando todas notas e dividindo pela quantidade de notas)
+
+        var media = 7;
+        var x = "aprovado";
+
+        var nota1 = 7;
+        var nota2 = 5;
+        var nota3 = 6;
+        var nota4 = 8;
+    
+--------------------------------
+4. Defina os tipos de variáveis:
+--------------------------------
+
+    4a: var x = "texto"; string
+
+    4b: var x = 10; numerico
+
+    4c: var x = true; booleano
+			
+    4d: var x = false; booleano
+			
+    4e: var x = "olá"; string
+			
+    4f: var x = "1"; string
+			
+    4g: var x = 1; numerico
+			
+    4h: var x = 10.5; numerico
+			    
+    4i: var x = "false"; string
+			
+    4j: var x = null; nulo
+							
+    4k: var x = undefined; nulo
+			
+    4l: var x = "true"; string
+			
+    4m: var x = 8; numerico
+			
+    4n: var x = true; booleano
+			
+    4o: var x = "5.6"; string
+			
+    4p: var x = 9; numerico
