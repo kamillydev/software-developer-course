@@ -3,47 +3,84 @@
 	saia de casa
 	vá até uma padaria
 	peça 1kg de pão
-		se não tiver pão
-		volte para casa
-		guarde o dinheiro
+    se não tiver pão
+        volte para casa
+        guarde o dinheiro
 	senão
-	pegue o pão
-	pague por ele
-	volte para casa
-	 	se não sobrar dinheiro
-		guarde o pão
-		se sobrar dinheiro
-	guarde o pão 
-	guarde o dinheiro
+        pegue o pão
+        pague por ele
+        volte para casa
+            se não sobrar dinheiro
+                guarde o pão
+            se sobrar dinheiro
+                guarde o pão 
+                guarde o dinheiro
 	
 2. Faça um algoritmo para somar dois números e multiplicar o resultado pelo primeiro número;
 
-	var = primeiro numero
-	var = segundo numero
-	var = resultado
+    var primeiroNumero;
+	var segundoNumero;
+	var resultado;
 	
-	pegue a variavel primeiro numero
-	pegue a variavel segundo numero
-	some elas duas
-	com a soma preencha a variavel resultado 
-	pegue a variavel resultado e multiplique ela pela variavel primeiro numero
-
-3. Faça um algoritmo para fazer regra de três;
-
+	resultado = primeiroNumero + segundoNumero
+    resultado = resultado * primeiroNumero
 
 
 4. Faça um algoritmo para descobrir o menor número entre as variaveis:
-    var a = 10;
-    var b = 15;
-    var c = 3;
+    var a = 9;
+    var b = 5;
+    var c = 7;
+
+    -- trocar os valores das variaveis para ver se o algoritmo está certo
+    -- TESTE DE MESA
+
+    se (a < b)
+        se (a < c)
+            a é o menor numero
+        senão 
+            c é o menor numero
+    senão 
+        se (b < c)
+            b é o menor numero
+        senão 
+            c é o menor numero
+
+
 
 5. Faça um algoritmo para descobrir o maior número entre as variaveis:
     var a = 31;
     var b = 12;
     var c = 29;
+	
+		se(a > b)
+			se(a > c)
+			a é o maior numero
+		senão
+			c é o maior numero 
+	senão
+	se(b > c)
+		b é o maior numero 
+	senão
+		c é o maior numero
+
 
 6. Faça um algoritmo para encontrar os números repetidos:
     var a = 19;
     var b = 7;
     var c = 13;
     var d = 7;
+
+	se(a = b)
+	a e b são repetidos	
+	se(a = c)
+	a e c são repetidos
+	se(a = d)
+	a e d são repetidos
+	se(b = c)
+	b e c são repetidos
+	se(b = d)
+	b e d são repetidos
+	se (c = d)
+	c e d são repetidos
+	senão 
+	não ha repetidos 
