@@ -1,0 +1,49 @@
+1. Descreva os passos de um algoritmo para ir comprar pão na padaria;
+	pegue dinheiro
+	saia de casa
+	vá até uma padaria
+	peça 1kg de pão
+		se não tiver pão
+		volte para casa
+		guarde o dinheiro
+	senão
+	pegue o pão
+	pague por ele
+	volte para casa
+	 	se não sobrar dinheiro
+		guarde o pão
+		se sobrar dinheiro
+	guarde o pão 
+	guarde o dinheiro
+	
+2. Faça um algoritmo para somar dois números e multiplicar o resultado pelo primeiro número;
+
+	var = primeiro numero
+	var = segundo numero
+	var = resultado
+	
+	pegue a variavel primeiro numero
+	pegue a variavel segundo numero
+	some elas duas
+	com a soma preencha a variavel resultado 
+	pegue a variavel resultado e multiplique ela pela variavel primeiro numero
+
+3. Faça um algoritmo para fazer regra de três;
+
+
+
+4. Faça um algoritmo para descobrir o menor número entre as variaveis:
+    var a = 10;
+    var b = 15;
+    var c = 3;
+
+5. Faça um algoritmo para descobrir o maior número entre as variaveis:
+    var a = 31;
+    var b = 12;
+    var c = 29;
+
+6. Faça um algoritmo para encontrar os números repetidos:
+    var a = 19;
+    var b = 7;
+    var c = 13;
+    var d = 7;
