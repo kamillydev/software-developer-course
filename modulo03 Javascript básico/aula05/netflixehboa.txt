@@ -1,0 +1,21 @@
+Netflix e Hbo
+-----------------------------------------------
+separação por topico
+dividido entre series e filmes
+barra de perquisa
+perfil separado para cada pessoa
+menu de informações
+avisar quando sai o proximo ep/temporada
+o "botão saiba mais"
+lista para assistir depois
+edição no perfil
+edição na conta em geral
+----------------------------------------------
+Youtube
+----------------------------------------------
+lista para assistir mais tarde
+biblioteca(historico de videos)
+categorias diversas
+----------------------------------------------
+em ambos a unica coisa que muda no acesso pelo celular é a interface 
+pois o conteudo continua o mesmo
