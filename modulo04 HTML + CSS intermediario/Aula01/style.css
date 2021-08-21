@@ -1,0 +1,19 @@
+:root{
+    --primary-color: #fc2e17;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+    background-color: #000;
+}
+h1, h2, h3{
+    color: #fff;
+}
+.main-div{
+    height: 100vh;
+    background: url("./imagens/background.jpg") center/cover;
+}
