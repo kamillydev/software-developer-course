@@ -17,3 +17,9 @@ h1, h2, h3{
     height: 100vh;
     background: url("./imagens/background.jpg") center/cover;
 }
+.top-div{
+    height: 90px;
+}
+.top-div img{
+    width: 134px;
+}

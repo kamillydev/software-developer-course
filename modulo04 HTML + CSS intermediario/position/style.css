@@ -1,0 +1,65 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+div {
+    height: 90px;
+}
+
+h1 {
+    background-color: #fff;
+}
+
+#main-div {
+    border: 30px black solid;
+    height: 400px;
+}
+
+#div-1 {
+    border: 5px blue solid;
+    color: blue;
+}
+
+#div-2 {
+    border: 5px red solid;
+    color: red;
+}
+
+#div-3 {
+    border: 5px green solid;
+    color: green;
+}
+
+#div-4 {
+    border: 5px purple solid;
+    color: purple;
+}
+.p-static{
+    position: static;
+}
+.p-relative{
+    position: relative;
+    left: 30px;
+}
+.p-absolute{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.p-fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
