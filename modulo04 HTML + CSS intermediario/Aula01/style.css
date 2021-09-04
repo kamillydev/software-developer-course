@@ -1,25 +1,113 @@
 :root{
-    --primary-color: #fc2e17;
+    --primary-color: #e50914;
+    --text-color: #fff;
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Glory";
 }
+
 body{
     font-family: Arial;
     background-color: #000;
 }
+
 h1, h2, h3{
-    color: #fff;
+    color: var(--text-color);
 }
+
 .main-div{
     height: 100vh;
     background: url("./imagens/background.jpg") center/cover;
 }
+.main-div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+}
+
 .top-div{
     height: 90px;
+    position: relative;
+    z-index: 2;
 }
+
 .top-div img{
     width: 134px;
+    position: absolute;
+    left: 50px;
+    top: 30%;
+}
+
+.top-div button{
+    position: absolute;
+    right: 55px;
+    top: 15%;
+    background-color: var(--primary-color);
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--text-color);
+    border: 0;
+    border-radius: 3px;
+}
+
+.content-div{
+    position: relative;
+    margin: 10% 25%;
+    text-align: center;
+    z-index: 2;
+}
+.content-div h1{
+    font-size: 3.125rem;
+    max-width: 640px;
+    margin: 0 auto; 
+    line-height: 1.1;
+
+}
+.content-div h2{
+    font-size: 1.625rem;
+    margin: 1rem auto;
+    max-width: 640px;
+    font-weight: 400;
+}
+.content-div h3{
+    max-width: none;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    font-weight: 400;
+}
+.content-div input {
+    position: absolute;
+    left: 0;
+    min-width: 460px;
+    height: 60px!important;
+    padding-left: 0.5rem;
+    outline: none;
+}
+.content-div button {
+    font-size: 1.625rem;
+    min-height: 60px;
+    padding: 0 1em;
+    min-width: 74px;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 0;
+    width: 14rem;
+}
+.content-div button:hover{
+    cursor: pointer;
 }
